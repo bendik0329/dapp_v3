@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NRNMXDF');</script>
+<!-- End Google Tag Manager -->
+  
+  <meta charset="utf-8" />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/favicon/Icon-removebg-preview.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon/Icon-removebg-preview.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon/Icon-removebg-preview.png">
+  <meta name="theme-color" content="#000000" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Using Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Using Local Font -->
+  <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/fonts/index.css" />
+
+  <title>Backed Capital | Real world assets into the blockchain</title>
+  <meta name="description"
+    content="Real world assets into the blockchain" />
+  <meta name="keywords" content="react,material,kit,application,dashboard,admin,template" />
+  <meta name="author" content="Backed Capital | Real world assets into the blockchain" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+  <style>
+    #light .st1{
+      stroke: red !important;
+    }
+    #dark .st1{
+      stroke:  red !important;
+    }
+    .slick-dots li button:before{
+      font-size: 12px !important;
+    }
+    #dark .slick-dots li.slick-active button:before {
+      opacity: 1 !important;
+      color: white !important;
+      font-size: 16px !important;
+
+    }
+    #custom-pagae .MuiTypography-overline{
+      font-size: 20px !important;
+      line-height: 50px !important;
+      letter-spacing: 1.1px !important;
+      text-align: center !important;
+      text-transform: none !important;
+      margin-bottom: 1px !important;
+      display: block !important;
+      font-family: Montserrat !important;
+      font-weight: 600 !important;
+    }
+    #custom-pagae .MuiTypography-body1{
+      color: #AEB6BF !important;
+      font-family: Poppins !important;
+      font-weight: 400 !important;
+      font-size: 12px !important;
+      line-height: 2 !important;
+      max-width: 400px !important;
+      padding: 10px 20px !important;
+      text-align: center !important;
+      margin: 0 auto !important;
+      padding-bottom: 25px !important;
+    }
+    #custom-pagae .MuiScopedCssBaseline-root{
+      background: transparent !important;
+    }
+    #custom-pagae .jss620, .jss32{
+      border-radius: 0 !important;
+    }
+    #dark>.MuiPaper-root{
+      background: #141721 !important;
+      background-color:#141721 !important;
+      box-shadow: unset !important;
+    }
+    #light>.MuiPaper-root{
+      background: #f5f5f5 !important;
+      background-color:#f5f5f5 !important;
+      box-shadow: unset !important;
+    }
+    #light .small-text {
+      color: black !important;
+    }
+    #modal-outer-dark{
+      background-color: rgba(20, 23, 33, 0) ;
+      backdrop-filter: blur(3px);
+    }
+    #modal-outer-light{
+      background-color: rgba(245, 245, 245, 0) ;
+      backdrop-filter: blur(3px);
+    }
+    #dark .outer-container{
+      background: #292c38;
+    }
+    #light .outer-container{
+      background: #fff;
+    }
+    #dark .inner-container{
+      background: #fff;
+    }
+    #light .inner-container{
+      background: black;
+      color: #fff
+    }
+    #dark .slick-dots li button:before {
+      opacity: 0.25 !important;
+      color: white !important;
+    }
+
+    #light .slick-dots li.slick-active button:before {
+      color: rgb(0, 0, 0) !important;
+      font-size: 16px !important;
+    }
+    #light .slick-dots li button:before {
+      color: rgb(0, 0, 0) !important;
+    }
+    #light .cutom-card{
+      background: #f7f7f7;
+    }
+    #dark .cutom-card{
+      background: #252834;
+    }
+    #light .input-custom{
+      color:rgb(0, 0, 0)
+    }
+  
+    .input-custom{
+    background: transparent;
+    border: none;
+    height: 30px;
+    margin-left: 20px;
+    color: rgba(255,255,255, 0.5);
+    font-family: 'Lato';
+    font-size: 1rem;
+  }
+  #light .custom-input-outer{
+    background: rgb(0 0 0 / 18%);
+    border: 1px solid rgb(34 32 32 / 34%);
+  }
+  .input-custom:focus, input:focus{
+    outline: none;
+}
+    .cutom-card{
+      border-radius: 10px;
+      margin: 10px;
+    }
+    .slider-bottom-heading{
+      font-family: 'Lato', sans-serif;;
+      text-transform: none;
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff
+    }
+    /* .css-hhwlp8-MuiContainer-root{
+      padding-top: 0 !important;
+    } */
+    .auth-input{
+      height: 40px;
+      border: 0;
+      background: #f8fafc;
+      padding: 0 20px;
+      width: 290px;
+      border-radius: 10px;
+    }
+    .bg-auth{
+      background-image: url(/static/auth.png);
+      background-size: cover;
+      background-position: right;
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+    }
+    .slider-category{
+      margin: 0;
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.5px;
+      color: #FFFFFF;
+      text-transform: capitalize;
+      position: absolute;
+      top: 0;
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(3px);
+      height: 76px;
+      width: 120px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+      border-radius: 20px;
+      margin: 13px 42px;
+      text-align: left;
+    }
+    #dark .small-text-inner{
+      color: rgba(255, 255, 255, 0.5)
+    }
+    #light .small-text-inner{
+      color: #A5ADCF;
+    }
+    .css-1gsok70-MuiTableCell-root:first-of-type {
+    padding-left: 0px;
+  }
+  .css-1ahqq1t-MuiTableCell-root:first-of-type{
+    padding-left: 0px;
+
+  }
+  .min-width-100{
+    min-width: 100px !important;
+  }
+    .slider-bottom-sub-heading{
+      font-size: 10px;
+      font-weight: normal;
+      font-family: 'Poppins';
+      text-transform: none;
+      color: #fff
+
+    }
+    .recharts-tooltip-wrapper:focus-visible{
+      border: 0 !important;
+    }
+    #dark .card{
+      background-image: linear-gradient(#21222a, #1e2029);
+    }
+    #light .card{
+      background: #fdfdfd;
+    }
+    .card{
+      min-height: 100px;
+      min-width: 100px;
+      border-radius: 20px;
+    }
+    #light .MuiIconButton-root{
+      color:rgb(0, 0, 0)
+    }
+    .custom-tooltip::after{
+      content: "";
+      position: absolute;
+      bottom: -7px;
+      height: 15px;
+      width: 15px;
+      transform: rotate(45deg);
+      background-color: white;
+      z-index: 0;
+      left: 40%;
+      border-radius: 3px;
+      opacity: 1;
+    }
+    .jss1{
+      margin-top: 0 !important;
+      left: 0 !important;
+    }
+    .tab-buttons.active{
+      width: 45px;
+      display: flex;
+      height: 45px;
+      background: #141518;
+      border-radius: 50px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .tab-buttons{
+      font-family: 'Abel';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      color: #5D6588;
+      padding: 8px;
+      cursor: pointer;
+    }
+    .custom-tooltip{
+      position: relative;
+      background: rgb(255, 255, 255);
+      border-radius: 15px;
+      padding: 10px;
+      margin-left: -50px;
+      border: 0;
+      box-shadow: 0px 5px 15px rgba(68, 68, 79, 0.1);
+    }
+    .custom-tooltip .desc{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.1px;
+
+      color: #696974;
+    }
+    .custom-tooltip .label{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+      color: #171725;
+    }
+    :focus-visible {
+    outline: none;
+    }
+    .MuiButton-contained.bto {
+      padding: 8px 10px !important;
+      font-size: 12px !important;
+      font-family: Poppins !important;
+      line-height: 1.7142857142857142 !important;
+      border-radius: 8px !important;
+      letter-spacing: 0.04em !important;
+
+  }
+  #dark .MuiButton-containedPrimary.bto {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+}
+#light .MuiButton-containedPrimary.bto {
+    color: #FFFFFF !important;
+    background-color: #000000 !important;
+}
+    @media(max-width: 768px){
+      .slider-category{
+        margin: 13px 50px;
+      }
+      #custom-pagae .MuiTypography-overline{
+        margin-top: 50px !important;
+        font-size: 24px  !important;
+        line-height: 28px  !important;
+      }
+      
+    }
+
+    .css-c1fpez-MuiTypography-root {
+    margin: 0px;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.MuiScopedCssBaseline-root{
+  background-color: transparent !important;
+}
+  </style>
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRNMXDF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+<script src="https://unpkg.com/@layerzerolabs/stargate-ui@latest/element.js" defer async></script>
+</html>
